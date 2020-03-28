@@ -34,11 +34,11 @@ export const Actions = styled.div`
     display: block;
     margin-right: 15px;
     &:hover {
-      fill: #fff;
+      color: #999;
       cursor: pointer;
     }
   }
-  button {
+  .newPost {
     width: 9vw;
     height: 40px;
     border: none;

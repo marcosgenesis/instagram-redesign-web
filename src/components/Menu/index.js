@@ -1,11 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
+import anime from "animejs";
+
+import {} from "react-icons/fi";
 import { Container, Profiles } from "./styles";
 import perfil from "../../assets/perfil.jpg";
+
 export default function Menu() {
+  useEffect(() => {
+    anime({
+      targets: ".item",
+      translateX: [-64, 0],
+      delay: function(el, i, l) {
+        return i * 100;
+      }
+    });
+  }, []);
   return (
     <Container>
       <ul>
-        <li>
+        <li className="item">
           <svg width="50" height="50" viewBox="0 0 69 69" fill="#9FA0A7">
             <g transform="translate(-910.036 -337.581)">
               <path
@@ -27,7 +40,7 @@ export default function Menu() {
           </svg>
           <p>Home</p>
         </li>
-        <li>
+        <li className="item">
           <svg width="50" height="50" viewBox="0 0 69 69" fill="#9FA0A7">
             <g transform="translate(-910.036 -337.581)">
               <path
@@ -49,7 +62,7 @@ export default function Menu() {
           </svg>
           <p>Popular</p>
         </li>
-        <li>
+        <li className="item">
           <svg width="50" height="50" viewBox="0 0 69 69" fill="#9FA0A7">
             <g transform="translate(-910.036 -337.581)">
               <path
@@ -71,7 +84,7 @@ export default function Menu() {
           </svg>
           <p>Stories</p>
         </li>
-        <li>
+        <li className="item">
           <svg width="50" height="50" viewBox="0 0 69 69" fill="#9FA0A7">
             <g transform="translate(-910.036 -337.581)">
               <path

@@ -72,7 +72,7 @@ export const PostContent = styled.div`
         }
         input {
           background: none;
-          color: white;
+          color: #333;
           font-size: 18px;
           padding: 10px 10px 10px 5px;
           display: block;

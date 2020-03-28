@@ -68,7 +68,7 @@ export default function Post() {
               <input type="text" required="required" />
               <span class="highlight"></span>
               <span class="bar"></span>
-              <label>Email</label>
+              <label>Novo comentário</label>
             </div>
             <button type="submit">Comentar</button>
           </div>

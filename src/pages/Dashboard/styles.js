@@ -17,11 +17,13 @@ export const Feed = styled.div`
     content: "";
     align-self: flex-end;
     position: absolute;
-    right: 0;
-    width: 60vw;
-    height: 2000px;
+    right: 0%;
+    width: 63vw;
+    height: ${props => props.numPosts * 600}px;
     border-top-left-radius: 400px;
     border: 1px solid #fff;
+    border-right-color: #111;
+    border-bottom-color: #111;
   }
   #feedTitle {
     display: flex;

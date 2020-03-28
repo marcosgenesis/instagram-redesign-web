@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
-
+import "react-perfect-scrollbar/dist/css/styles.css";
 export default createGlobalStyle`
+  &::-webkit-scrollbar{width:10px; background:#333;}
+  &::-webkit-scrollbar-track{background: rgba(0,0,0,0.1);}
+  &::-webkit-scrollbar-thumb{border-radius:10px; background:#000;}
   *{
     margin: 0;
     padding: 0;
